@@ -11,6 +11,7 @@ public class cowsandbulls : MonoBehaviour
     public string secretWord = "hello";
     public int playerLives = 3;
 
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,10 @@ public class cowsandbulls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+    public void OnButtonClick(TMP_InputField input)
+    {
+        Debug.Log("Input was : " + input.text);
     }
 }
